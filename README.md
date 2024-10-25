@@ -52,4 +52,6 @@ After creating the project, install the following dependencies:
 
 `constants` - `index.js` - all the content that i gonna have in my app;
 
+`hoc` - High Order Component styles;
+
 `tailwind.config.js` - contain primaray, secondary and terciary colors + box-shadows + screens + animations and background-image.
