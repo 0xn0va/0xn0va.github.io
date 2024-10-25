@@ -20,9 +20,19 @@ After creating the project, install the following dependencies:
 
 `npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom`
 
+`npm i --legacy-peer-deps -D postcss autoprefixer`
+
+`npx tailwind init -p`
+
+`npm i typed.js`
+
 ### Dependencies description:
 
-`--legacy-peer-deps`- I use this flag to resolve compatibility issues with older versions of React required by react-tilt;
+`--legacy-peer-deps` - I use this flag to resolve compatibility issues with older versions of React required by react-tilt;
+
+`npm i --legacy-peer-deps -D postcss autoprefixer` - I cannot use just tailwind I have to add `postcss` and `autoprefixer` to fix errors related to the style;
+
+`npx tailwind init -p` - create folder `postcss.config.js`;
 
 `@react-three/fiber` - create three.js code in react;
 
@@ -35,6 +45,8 @@ After creating the project, install the following dependencies:
 `@emailjs/browser` - library that allows to send emails directly from the application using the EmailJS API;
 
 `framer-motion` - A powerful animation library for React that lets create fluid animations and transitions easily and intuitively;
+
+`npm i typed.js` - create animated typing effects in texts;
 
 `react-router-dom` - for routing.
 
