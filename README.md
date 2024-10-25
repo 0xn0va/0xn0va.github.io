@@ -1,6 +1,6 @@
 # Portfolio
 
-## Description
+## App description:
 
 ## Dependency installation
 
@@ -37,3 +37,19 @@ After creating the project, install the following dependencies:
 `framer-motion` - A powerful animation library for React that lets create fluid animations and transitions easily and intuitively;
 
 `react-router-dom` - for routing.
+
+### Folders description:
+
+`assests` - use all the icons and images for the app;
+
+`components` - components to render inside `App.jsx`;
+
+`index.css` - for gradients + box-shadows and tailwind imports;
+
+`style.js` - Tailwind utility styles;
+
+`utils` - create `motion.js` for framer-motions animations;
+
+`constants` - `index.js` - all the content that i gonna have in my app;
+
+`tailwind.config.js` - contain primaray, secondary and terciary colors + box-shadows + screens + animations and background-image.
