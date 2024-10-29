@@ -12,14 +12,14 @@ const viteEmail = import.meta.env.VITE_EMAIL
 
 const Contact = () => {
   const formRef = useRef()
+  const [loading, setLoading] = useState(false)
 
   const [form, setForm] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   })
-
-  const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
     const { target } = e
@@ -34,13 +34,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (!form.name || !form.email || !form.message) {
+    if (!form.name || !form.email || !form.subject || !form.message) {
       alert("Please fill out all fields, then click 'Send'")
       return
     }
 
     setLoading(true)
 
+    console.log(publicKey, serviceId, templateId)
     emailjs
       .send(
         serviceId,
@@ -50,6 +51,7 @@ const Contact = () => {
           to_name: "Bia",
           from_email: form.email,
           to_email: viteEmail,
+          subject: form.subject,
           message: form.message,
         },
         publicKey
@@ -62,6 +64,7 @@ const Contact = () => {
           setForm({
             name: "",
             email: "",
+            subject: "",
             message: "",
           })
         },
@@ -99,6 +102,17 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="example@gmail.com"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Subject</span>
+            <input
+              type="text"
+              name="subject"
+              value={form.subject}
+              onChange={handleChange}
+              placeholder="Job opportunity"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
