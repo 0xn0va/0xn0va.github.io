@@ -12,6 +12,7 @@ const viteEmail = import.meta.env.VITE_EMAIL
 
 const Contact = () => {
   const formRef = useRef()
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -75,7 +76,7 @@ const Contact = () => {
 
   return (
     <div className={`flex-1 xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
+      <motion.div variants={slideIn("up", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <h3 className={styles.sectionHeadText}>Get in touch</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
@@ -86,7 +87,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Christopher Nolan"
+              placeholder="John Doe"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

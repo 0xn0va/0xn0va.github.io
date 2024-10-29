@@ -6,7 +6,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <StarsCanvas />
-      <div class=" z-1">
+      <div className=" z-1">
         <div className="relative">
           <div className="bg-cover bg-no-repeat bg-center">
             <Navbar />

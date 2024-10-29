@@ -9,7 +9,7 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(textRef.current, {
-      strings: [" Bia!", "a Frontend Developer!"],
+      strings: [" Bia!", "a Frontend Dev!"],
       typeSpeed: 80,
       backSpeed: 70,
       loop: true,
