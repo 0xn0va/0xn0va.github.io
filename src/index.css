@@ -32,8 +32,8 @@
 }
 
 .lilac-gradient {
-  background: #afa7d7; /* Lilás claro */
-  background: linear-gradient(-90deg, #afa7d7 0%, rgba(60, 51, 80, 0) 100%); /* Gradiente */
+  background: #afa7d7; /* purple light */
+  background: linear-gradient(-90deg, #afa7d7 0%, rgba(60, 51, 80, 0) 100%); /* gradient */
   background: -webkit-linear-gradient(-90deg, #afa7d7 0%, rgba(60, 51, 80, 0) 100%); /* Compatbl with WebKit */
 }
 

@@ -5,21 +5,23 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-[-1] bg-primary">
-        <div className="bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className="">
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <div>
-          <Footer />
+      <StarsCanvas />
+      <div class=" z-1">
+        <div className="relative">
+          <div className="bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <div className="">
+            <Contact />
+          </div>
+          <div>
+            <Footer />
+          </div>
         </div>
       </div>
     </BrowserRouter>

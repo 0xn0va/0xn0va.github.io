@@ -27,7 +27,7 @@ const Footer = () => {
   }
 
   return (
-    <div className=" flex flex-col items-center sm:flex-row sm:justify-between">
+    <div className="flex flex-col items-center sm:flex-row sm:justify-between">
       <div className="text-white text-[14px] sm:text-[16px] md:text-[18px] font-bold mb-4 sm:mb-0">Beatriz, {getCurrentYear()}</div>
 
       <div className="flex gap-6">
@@ -53,4 +53,4 @@ const Footer = () => {
   )
 }
 
-export default SectionWrapper(Footer, "")
+export default SectionWrapper(Footer)
