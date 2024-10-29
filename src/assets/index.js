@@ -23,6 +23,8 @@ import reactjs from "./tech/reactjs.png"
 import tailwind from "./tech/tailwind.png"
 import typescript from "./tech/typescript.png"
 import oldPortfolio from "./portfolio_dark.png"
+import humanBodyPose from "./bask1.gif"
+import thisPortfolio from "./thisPortfolio.png"
 
 export {
   figma,
@@ -50,4 +52,6 @@ export {
   tailwind,
   typescript,
   oldPortfolio,
+  humanBodyPose,
+  thisPortfolio,
 }

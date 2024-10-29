@@ -19,6 +19,8 @@ import {
   bootstrap,
   figma,
   reactNative,
+  humanBodyPose,
+  thisPortfolio,
 } from "../assets"
 
 export const navLinks = [
@@ -166,8 +168,29 @@ const experiences = [
 
 const projects = [
   {
-    name: "My old portfolio",
-    description: "This portfolio was the result of my journey during 2023, a testimony of my learning, improvement and passion for development.",
+    name: "Human Body Pose Detection",
+    description:
+      "I track the body of the athlete. Identify different reference points and use them to create the complete body posture to be able to perform metrics of the athlete's movement and adjust in sports training.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenCV",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NumPy",
+        color: "pink-text-gradient",
+      },
+    ],
+    media: humanBodyPose,
+    source_code_link: "https://github.com/BRp99/body-pose-detection",
+  },
+  {
+    name: "This Portfolio",
+    description: "This portfolio is a testimony of my learning, improvement and passion for development.",
     tags: [
       {
         name: "React",
@@ -182,31 +205,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "", //change
+    media: thisPortfolio,
     source_code_link: "https://github.com/BRp99/BRp99.github.io",
   },
   {
-    name: "This portfolio",
-    description: "Bla Bla Bla.",
-    tags: [
-      {
-        name: "some",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "thing",
-        color: "green-text-gradient",
-      },
-      {
-        name: "here",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "", //change
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Casinha da Praia",
+    name: "Next Project",
     description: "Bla bla bla FIX height cards.",
     tags: [
       {
@@ -222,7 +225,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "", //change
+    media: "", //change
     source_code_link: "https://github.com/",
   },
 ]
