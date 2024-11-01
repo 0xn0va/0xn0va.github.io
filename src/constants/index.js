@@ -21,6 +21,8 @@ import {
   reactNative,
   humanBodyPose,
   thisPortfolio,
+  valentine,
+  hangman,
 } from "../assets"
 
 export const navLinks = [
@@ -168,6 +170,48 @@ const experiences = [
 
 const projects = [
   {
+    name: "Hangman Game",
+    description:
+      "This was one of my firsts projects! I always wanted to implement this game with code to handle 'events' and to break the problem into smaller parts.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    media: hangman,
+    source_code_link: "https://github.com/BRp99/hangman2",
+  },
+  {
+    name: "Valentine Proposal",
+    description:
+      "This was also one of my first project! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    media: valentine,
+    source_code_link: "https://github.com/BRp99/valentine-proposal",
+  },
+  {
     name: "Human Body Pose Detection",
     description:
       "I track the body of the athlete. Identify different reference points and use them to create the complete body posture to be able to perform metrics of the athlete's movement and adjust in sports training.",
@@ -206,27 +250,7 @@ const projects = [
       },
     ],
     media: thisPortfolio,
-    source_code_link: "https://github.com/BRp99/BRp99.github.io",
-  },
-  {
-    name: "Next Project",
-    description: "Bla bla bla FIX height cards.",
-    tags: [
-      {
-        name: "s",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "s",
-        color: "green-text-gradient",
-      },
-      {
-        name: "s",
-        color: "pink-text-gradient",
-      },
-    ],
-    media: "", //change
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/BRp99/portfolio",
   },
 ]
 

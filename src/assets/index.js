@@ -25,6 +25,8 @@ import typescript from "./tech/typescript.png"
 import oldPortfolio from "./portfolio_dark.png"
 import humanBodyPose from "./bask1.gif"
 import thisPortfolio from "./thisPortfolio.png"
+import valentine from "./valentine.png"
+import hangman from "./hangman.png"
 
 export {
   figma,
@@ -54,4 +56,6 @@ export {
   oldPortfolio,
   humanBodyPose,
   thisPortfolio,
+  valentine,
+  hangman,
 }
