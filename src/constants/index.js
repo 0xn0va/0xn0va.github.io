@@ -172,19 +172,23 @@ const projects = [
   {
     name: "Hangman Game",
     description:
-      "This was one of my firsts projects! I always wanted to implement this game with code to handle 'events' and to break the problem into smaller parts.",
+      "This was one of my first project! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
     tags: [
       {
-        name: "React",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "JavaScript",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "TypeScript",
+        name: "CSS3",
         color: "pink-text-gradient",
+      },
+      {
+        name: "2023",
+        color: "ll-text-gradient",
       },
     ],
     media: hangman,
@@ -193,19 +197,23 @@ const projects = [
   {
     name: "Valentine Proposal",
     description:
-      "This was also one of my first project! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
+      "This was also of one of my first projects! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
     tags: [
       {
-        name: "React",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "JavaScript",
+        name: "TypeScript",
         color: "green-text-gradient",
       },
       {
-        name: "TypeScript",
+        name: "CSS3",
         color: "pink-text-gradient",
+      },
+      {
+        name: "2023",
+        color: "ll-text-gradient",
       },
     ],
     media: valentine,
@@ -228,6 +236,10 @@ const projects = [
         name: "NumPy",
         color: "pink-text-gradient",
       },
+      {
+        name: "2023",
+        color: "ll-text-gradient",
+      },
     ],
     media: humanBodyPose,
     source_code_link: "https://github.com/BRp99/body-pose-detection",
@@ -245,8 +257,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "CSS3",
+        name: "Tailwind",
         color: "pink-text-gradient",
+      },
+      {
+        name: "2024",
+        color: "ll-text-gradient",
       },
     ],
     media: thisPortfolio,

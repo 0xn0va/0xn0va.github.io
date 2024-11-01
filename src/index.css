@@ -95,6 +95,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.ll-text-gradient {
+  background: #d4a5e3;
+  background: -webkit-linear-gradient(to top, #d4a5e3, #e8c4f3);
+  background: linear-gradient(to top, #d4a5e3, #e8c4f3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- style */
 .canvas-loader {
   font-size: 10px;
