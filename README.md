@@ -26,6 +26,12 @@ After creating the project, install the following dependencies:
 
 `npm i typed.js`
 
+`npm install --save-dev typescript @types/react @types/react-dom`
+
+`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+`npm install --save-dev @types/three`
+
 ### Dependencies description:
 
 `--legacy-peer-deps` - I use this flag to resolve compatibility issues with older versions of React required by react-tilt;
@@ -48,7 +54,13 @@ After creating the project, install the following dependencies:
 
 `npm i typed.js` - create animated typing effects in texts;
 
-`react-router-dom` - for routing.
+`react-router-dom` - for routing;
+
+`npm install --save-dev typescript @types/react @types/react-dom` - install TypeScript and types for the React and Node.js libraries;
+
+`npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin` - configure ESLint and Prettier for TypeScript;
+
+`npm install --save-dev @types/three` - for TypeScript to recognize the namespace THREE;
 
 ### Folders description:
 
@@ -67,3 +79,21 @@ After creating the project, install the following dependencies:
 `hoc` - High Order Component styles;
 
 `tailwind.config.js` - contain primaray, secondary and terciary colors + box-shadows + screens + animations and background-image.
+
+### Files description:
+
+`tsconfig.json` in the project root to configure TypeScript;
+
+Add jsx property in `tsconfig.json` of compilerOptions;
+
+Create a declaration file that declares the module maath/random/dist/maath-random.esm - `src` - `@types` - `maath.d.ts`.
+The file `maath.d.ts` tells TypeScript how to interpret the maath/random/dist/maath-random.esm module, defining the inSphere function and its input and output types)
+inside tsconfig.json add: "typeRoots": ["./node_modules/@types", "./src/@types"];
+
+`images.d.ts` inside '@types' - because TS doesn't know how to deal with image files;
+
+Configure TS to recognize 'import.meta' - inside `tsconfig.json` add:
+
+create file 'vite-env.d.ts' for TS to recognize the environment variables:
+from "module": "commonjs" to "module": "esnext" (for TS to support import.meta)
+inside @types - import-meta.d.ts
