@@ -1,9 +1,14 @@
-import { motion } from "framer-motion"
-import { styles } from "../../styles"
-import { staggerContainer } from "../../utils/motion"
+import { motion } from 'framer-motion'
+import { styles } from '../../styles'
+import { staggerContainer } from '../../utils/motion'
 
-const StarWrapper = (Component, idName) =>
-  function HOC() {
+type StarWrapperProps = {
+  idName: string
+  Component: React.FC
+}
+
+const StarWrapper = (Component: React.FC, idName: string) => {
+  const HOC: React.FC = () => {
     return (
       <motion.section
         variants={staggerContainer()}
@@ -20,5 +25,8 @@ const StarWrapper = (Component, idName) =>
       </motion.section>
     )
   }
+
+  return HOC
+}
 
 export default StarWrapper

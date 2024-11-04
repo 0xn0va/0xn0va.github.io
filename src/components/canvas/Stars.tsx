@@ -1,22 +1,22 @@
-import { useState, useRef, useEffect, Suspense } from "react"
-import { Canvas, useFrame } from "@react-three/fiber"
-import { Points, PointMaterial } from "@react-three/drei"
-import * as random from "maath/random/dist/maath-random.esm"
+import { useState, useRef, useEffect, Suspense } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { Points, PointMaterial } from '@react-three/drei'
+import * as random from 'maath/random/dist/maath-random.esm'
+import * as THREE from 'three'
 
-const Stars = (props) => {
-  const ref = useRef()
+interface StarsProps {}
+
+const Stars = (props: StarsProps) => {
+  const ref = useRef<THREE.Points>(null)
   const [sphere] = useState(() => random.inSphere(new Float32Array(3000), { radius: 1.2 }))
 
   useEffect(() => {
-    // console.log("Positions (sphere):", sphere)
-    // console.log("Ref (geometry):", ref.current)
-
     if (ref.current) {
-      ref.current.geometry.computeBoundingSphere()
+      ;(ref.current.geometry as THREE.BufferGeometry).computeBoundingSphere()
     }
   }, [sphere])
 
-  useFrame((state, delta) => {
+  useFrame((state: any, delta: number) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 10
       ref.current.rotation.y -= delta / 15

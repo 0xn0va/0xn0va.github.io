@@ -1,17 +1,21 @@
-import { motion } from "framer-motion"
-import { styles } from "../styles"
-import { services } from "../constants"
-import { SectionWrapper } from "./hoc"
-import { fadeIn, textVariant } from "../utils/motion"
+import { motion } from 'framer-motion'
+import { styles } from '../styles'
+import { services } from '../constants'
+import { SectionWrapper } from './hoc'
+import { fadeIn, textVariant } from '../utils/motion'
 
-const ServiceCard = ({ index, title, icon }) => (
+interface ServiceCardProps {
+  index: number
+  title: string
+  icon: string
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => (
   <div className="xs:w-[250px] w-full">
     <motion.div
-      variants={fadeIn("up", "easeInOut", index * 0.5, 0.75)}
+      variants={fadeIn('up', 'easeInOut', index * 0.5, 0.75)}
       className="w-full p-[1px] rounded-[20px] shadow-md"
-      // animate={{ borderColor: ["#00cea8", "#bf61ff"] }}
-      transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-      // style={{ borderWidth: "1px", borderStyle: "solid" }}
+      transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
     >
       <div className="rounded-[20px] py-5 px-8 min-h-[280px] flex justify-center items-center flex-col">
         <motion.img
@@ -22,7 +26,7 @@ const ServiceCard = ({ index, title, icon }) => (
           transition={{
             duration: 3,
             repeat: Infinity,
-            ease: "linear",
+            ease: 'linear',
           }}
         />
         <h3 className="text-white text-[20px] font-semibold text-center">{title}</h3>
@@ -31,19 +35,24 @@ const ServiceCard = ({ index, title, icon }) => (
   </div>
 )
 
-const About = () => {
+interface Service {
+  title: string
+  icon: string
+}
+
+const About: React.FC = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(0)}>
         <h2 className={styles.sectionHeadText}>About</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+      <motion.p variants={fadeIn('up', 'easeInOut', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         I'm a frontend developer with experience in TypeScript and JavaScript, with React, Node.js and Figma.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
+        {services.map((service: Service, index: number) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
@@ -51,4 +60,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, 'about')
