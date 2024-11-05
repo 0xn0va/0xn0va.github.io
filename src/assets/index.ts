@@ -27,6 +27,7 @@ import humanBodyPose from "./bask1.gif"
 import thisPortfolio from "./thisPortfolio.png"
 import valentine from "./valentine.png"
 import hangman from "./hangman.png"
+import portfolio_vid from "./portfolio_video.mp4"
 
 export {
   figma,
@@ -58,4 +59,5 @@ export {
   thisPortfolio,
   valentine,
   hangman,
+  portfolio_vid,
 }

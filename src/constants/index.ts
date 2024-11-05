@@ -23,6 +23,7 @@ import {
   thisPortfolio,
   valentine,
   hangman,
+  portfolio_vid,
 } from "../assets"
 
 export const navLinks = [
@@ -222,7 +223,7 @@ const projects = [
     live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
   },
   {
-    name: "Human Body Pose Detection",
+    name: "Body Pose Detection",
     description:
       "I track an athlete's body by identifying key reference points. This allows me to analyze movement metrics and make adjustments to enhance sports training.",
     tags: [
@@ -249,7 +250,8 @@ const projects = [
   },
   {
     name: "This Portfolio",
-    description: "This portfolio is a testimony of my learning, improvement and passion for development.",
+    description:
+      "This portfolio is a testament to my learning, growth, and passion for development, where each line of code represents a discovery and the implementation of new technologies and approaches.",
     tags: [
       {
         name: "React",

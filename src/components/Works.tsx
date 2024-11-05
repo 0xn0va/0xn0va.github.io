@@ -23,7 +23,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tags, media, source_code_link, live_demo_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="flex flex-col min-h-[450px] max-w-[360px] w-full">
       <Tilt
         options={{
           max: 0,
@@ -31,11 +31,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
           speed: 450,
           perspective: 0,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl h-full flex flex-col"
       >
         <div className="relative w-full h-[230px]">
-          {media.endsWith(".mp4") || media.endsWith(".gif") ? (
-            <img src={media} alt="project_media" className="w-full h-full object-cover rounded-2xl" />
+          {media.endsWith(".mp4") ? (
+            <video className="w-full h-full object-cover rounded-2xl" autoPlay loop muted>
+              <source src={media} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           ) : (
             <img src={media} alt="project_media" className="w-full h-full object-cover rounded-2xl" />
           )}
@@ -58,12 +61,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 flex flex-col flex-grow">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        {/* As tags agora estão dentro do mesmo bloco flex e ficam abaixo da descrição */}
+        <div className="mt-4 flex flex-wrap gap-2 justify-start">
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
@@ -89,7 +93,7 @@ const Works: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 justify-between">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
