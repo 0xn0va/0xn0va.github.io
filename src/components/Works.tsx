@@ -35,10 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
       >
         <div className="relative w-full h-[230px]">
           {media.endsWith(".mp4") || media.endsWith(".gif") ? (
-            <video className="w-full h-full object-cover rounded-2xl" autoPlay loop muted>
-              <source src={media} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img src={media} alt="project_media" className="w-full h-full object-cover rounded-2xl" />
           ) : (
             <img src={media} alt="project_media" className="w-full h-full object-cover rounded-2xl" />
           )}
