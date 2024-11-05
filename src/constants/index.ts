@@ -193,6 +193,7 @@ const projects = [
     ],
     media: valentine,
     source_code_link: "https://github.com/BRp99/valentine-proposal",
+    live_demo_link: "https://valentine-proposal-brp99.vercel.app/",
   },
   {
     name: "Hangman Game",
@@ -218,6 +219,7 @@ const projects = [
     ],
     media: hangman,
     source_code_link: "https://github.com/BRp99/hangman2",
+    live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
   },
   {
     name: "Human Body Pose Detection",
@@ -243,6 +245,7 @@ const projects = [
     ],
     media: humanBodyPose,
     source_code_link: "https://github.com/BRp99/body-pose-detection",
+    live_demo_link: "https://github.com/BRp99/body-pose-detection",
   },
   {
     name: "This Portfolio",
@@ -267,6 +270,7 @@ const projects = [
     ],
     media: thisPortfolio,
     source_code_link: "https://github.com/BRp99/portfolio",
+    live_demo_link: "https://valentine-proposal-brp99.vercel.app/",
   },
 ]
 

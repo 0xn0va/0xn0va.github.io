@@ -1,10 +1,10 @@
-import { Tilt } from 'react-tilt'
-import { motion } from 'framer-motion'
-import { styles } from '../styles'
-import { github } from '../assets'
-import { SectionWrapper } from './hoc'
-import { projects } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
+import { Tilt } from "react-tilt"
+import { motion } from "framer-motion"
+import { styles } from "../styles"
+import { github } from "../assets"
+import { SectionWrapper } from "./hoc"
+import { projects } from "../constants"
+import { fadeIn, textVariant } from "../utils/motion"
 
 interface Tag {
   name: string
@@ -18,11 +18,12 @@ interface ProjectCardProps {
   tags: Tag[]
   media: string
   source_code_link: string
+  live_demo_link: string
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tags, media, source_code_link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tags, media, source_code_link, live_demo_link }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 0,
@@ -33,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          {media.endsWith('.mp4') || media.endsWith('.gif') ? (
+          {media.endsWith(".mp4") || media.endsWith(".gif") ? (
             <video className="w-full h-full object-cover rounded-2xl" autoPlay loop muted>
               <source src={media} type="video/mp4" />
               Your browser does not support the video tag.
@@ -44,11 +45,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
             >
               <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>
+            {live_demo_link && (
+              <div
+                onClick={() => window.open(live_demo_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <span className="text-white font-bold text-sm">🔗</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -77,7 +86,7 @@ const Works: React.FC = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p variants={fadeIn('up', 'spring', 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+        <motion.p variants={fadeIn("up", "spring", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           These projects highlight my skills and experience with real-world examples. Each one includes a brief description, along with links to the
           code and live demos.
         </motion.p>
@@ -92,4 +101,4 @@ const Works: React.FC = () => {
   )
 }
 
-export default SectionWrapper(Works, '')
+export default SectionWrapper(Works, "")
