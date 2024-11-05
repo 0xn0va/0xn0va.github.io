@@ -170,34 +170,9 @@ const experiences = [
 
 const projects = [
   {
-    name: "Hangman Game",
-    description:
-      "This was one of my first project! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
-    tags: [
-      {
-        name: "ReactJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS3",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "2023",
-        color: "ll-text-gradient",
-      },
-    ],
-    media: hangman,
-    source_code_link: "https://github.com/BRp99/hangman2",
-  },
-  {
     name: "Valentine Proposal",
     description:
-      "This was also of one of my first projects! I share this project with my friends and they send it to their valentines. Depending on the answer, things will happen to one of the buttons.",
+      "This was one of my first projects! I shared it with my friends, and they sent it to their valentines. Depending on the answer, something will happen to one of the buttons.",
     tags: [
       {
         name: "ReactJS",
@@ -220,9 +195,34 @@ const projects = [
     source_code_link: "https://github.com/BRp99/valentine-proposal",
   },
   {
+    name: "Hangman Game",
+    description:
+      "This was also one of my first projects! I created it to practice handling events, work with DOM manipulation, and learn to break down problems into smaller parts. ",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS3",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "2023",
+        color: "ll-text-gradient",
+      },
+    ],
+    media: hangman,
+    source_code_link: "https://github.com/BRp99/hangman2",
+  },
+  {
     name: "Human Body Pose Detection",
     description:
-      "I track the body of the athlete. Identify different reference points and use them to create the complete body posture to be able to perform metrics of the athlete's movement and adjust in sports training.",
+      "I track an athlete's body by identifying key reference points. This allows me to analyze movement metrics and make adjustments to enhance sports training.",
     tags: [
       {
         name: "Python",
