@@ -97,3 +97,37 @@ Configure TS to recognize 'import.meta' - inside `tsconfig.json` add:
 create file 'vite-env.d.ts' for TS to recognize the environment variables:
 from "module": "commonjs" to "module": "esnext" (for TS to support import.meta)
 inside @types - import-meta.d.ts
+
+## GitHub Pages Setup
+
+1. **Installations:**
+   install Vite and gh-pages:
+   `npm install --save-dev vite gh-pages`
+
+2. **GitHub Pages configuration:**
+   In my GitHub repository, go to **Settings** > **Pages** and select the `gh-pages` branch and the `root` folder to publish.
+
+3. **MIME Type issue resolution:**
+   To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was configured to generate `.mjs` files instead of `.js` during the build process. I write code in the `vite.config.js` file:
+   `javascript
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name]-[hash].mjs',
+        chunkFileNames: '[name]-[hash].mjs',
+        assetFileNames: '[name]-[hash][extname]',
+      },
+    },
+  }
+  `
+
+## Deploying the project
+
+When the project is "LIVE":
+
+**Code changes:**
+Make the necessary changes, then `git add .` `git commit -m "info"` `git push`;
+DELETE 'dist' folder created with preview `npm run build`.
+
+**Run the build:**
+`npm run build`. If success, write in the terminal `npm run deploy`
