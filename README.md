@@ -100,16 +100,16 @@ inside @types - import-meta.d.ts
 
 ## GitHub Pages Setup
 
-1. **Installations:**
-   install Vite and gh-pages:
-   `npm install --save-dev vite gh-pages`
+**Installations:**
+install Vite and gh-pages:
+`npm install --save-dev vite gh-pages`
 
-2. **GitHub Pages configuration:**
-   In my GitHub repository, go to **Settings** > **Pages** and select the `gh-pages` branch and the `root` folder to publish.
+**GitHub Pages configuration:**
+In my GitHub repository, I have to go to **Settings** > **Pages** and select the `gh-pages` branch and the `root` folder to publish.
 
-3. **MIME Type issue resolution:**
-   To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was configured to generate `.mjs` files instead of `.js` during the build process. I write code in the `vite.config.js` file:
-   `javascript
+**MIME Type issue resolution:**
+To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was configured to generate `.mjs` files instead of `.js` during the build process. I write code in the `vite.config.js` file:
+`javascript
   build: {
     rollupOptions: {
       output: {
@@ -121,13 +121,16 @@ inside @types - import-meta.d.ts
   }
   `
 
-## Deploying the project
+## Project in Development:
 
-When the project is "LIVE":
+1. `git add .`;
+2. `git commit -m "info"`;
+3. `git push`.
+4. DON'T DELETE 'dist' folder.
 
-**Code changes:**
-Make the necessary changes, then `git add .` `git commit -m "info"` `git push`;
-DELETE 'dist' folder created with preview `npm run build`.
+## Update the LIVE project when ready:
 
-**Run the build:**
-`npm run build`. If success, write in the terminal `npm run deploy`
+1. When the project is LIVE and I wanna send the updates to the LIVE project: `git add .` then `git commit -m "info"` then `git push`;
+2. DELETE 'dist' folder;
+3. Create build folder 'dist' with `npm run build`;
+4. If `npm run build` was successful, I have to wrote in the terminal `npm run deploy` to deploy to gh-pages.
