@@ -123,6 +123,8 @@ To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was c
 
 ## Project in Development:
 
+(`npm run dev` for localhost)
+
 1. `git add .`;
 2. `git commit -m "info"`;
 3. `git push`.

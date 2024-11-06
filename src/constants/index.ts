@@ -272,7 +272,7 @@ const projects = [
     ],
     media: thisPortfolio,
     source_code_link: "https://github.com/BRp99/portfolio",
-    live_demo_link: "https://valentine-proposal-brp99.vercel.app/",
+    live_demo_link: "https://brp99.github.io/portfolio/",
   },
 ]
 
