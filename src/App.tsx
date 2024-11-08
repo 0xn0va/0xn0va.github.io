@@ -1,12 +1,12 @@
-import { BrowserRouter } from 'react-router-dom'
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
-import Footer from './components/Footer'
+import { BrowserRouter } from "react-router-dom"
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
     <BrowserRouter>
       <StarsCanvas />
-      <div className=" z-1">
+      <div className="z-1">
         <div className="relative">
           <div className="bg-cover bg-no-repeat bg-center">
             <Navbar />
@@ -16,7 +16,7 @@ export default function App() {
           <Experience />
           <Tech />
           <Works />
-          <div className="">
+          <div>
             <Contact />
           </div>
           <div>
