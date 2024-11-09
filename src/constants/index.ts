@@ -171,6 +171,28 @@ const experiences = [
 
 const projects = [
   {
+    name: "Body Pose Detection",
+    description:
+      "I track an athlete's body by identifying key reference points. This allows me to analyze movement metrics and make adjustments to enhance sports training.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenCV",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NumPy",
+        color: "pink-text-gradient",
+      },
+    ],
+    media: humanBodyPose,
+    source_code_link: "https://github.com/BRp99/body-pose-detection",
+    live_demo_link: "https://github.com/BRp99/body-pose-detection",
+  },
+  {
     name: "Valentine Proposal",
     description:
       "This was one of my first projects! I shared it with my friends, and they sent it to their valentines. Depending on the answer, something will happen to one of the buttons.",
@@ -213,28 +235,6 @@ const projects = [
     media: hangman,
     source_code_link: "https://github.com/BRp99/hangman2",
     live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
-  },
-  {
-    name: "Body Pose Detection",
-    description:
-      "I track an athlete's body by identifying key reference points. This allows me to analyze movement metrics and make adjustments to enhance sports training.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "OpenCV",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NumPy",
-        color: "pink-text-gradient",
-      },
-    ],
-    media: humanBodyPose,
-    source_code_link: "https://github.com/BRp99/body-pose-detection",
-    live_demo_link: "https://github.com/BRp99/body-pose-detection",
   },
   {
     name: "This Portfolio",
