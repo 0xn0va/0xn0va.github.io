@@ -187,10 +187,6 @@ const projects = [
         name: "CSS3",
         color: "pink-text-gradient",
       },
-      {
-        name: "2023",
-        color: "ll-text-gradient",
-      },
     ],
     media: valentine,
     source_code_link: "https://github.com/BRp99/valentine-proposal",
@@ -212,10 +208,6 @@ const projects = [
       {
         name: "CSS3",
         color: "pink-text-gradient",
-      },
-      {
-        name: "2023",
-        color: "ll-text-gradient",
       },
     ],
     media: hangman,
@@ -239,10 +231,6 @@ const projects = [
         name: "NumPy",
         color: "pink-text-gradient",
       },
-      {
-        name: "2023",
-        color: "ll-text-gradient",
-      },
     ],
     media: humanBodyPose,
     source_code_link: "https://github.com/BRp99/body-pose-detection",
@@ -264,10 +252,6 @@ const projects = [
       {
         name: "Tailwind",
         color: "pink-text-gradient",
-      },
-      {
-        name: "2024",
-        color: "ll-text-gradient",
       },
     ],
     media: thisPortfolio,
