@@ -23,7 +23,6 @@ import {
   thisPortfolio,
   valentine,
   hangman,
-  portfolio_vid,
 } from "../assets"
 
 export const navLinks = [

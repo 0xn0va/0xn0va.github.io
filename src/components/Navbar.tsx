@@ -29,7 +29,7 @@ export default function Navbar() {
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"}`}>
       <div className={`w-full ${styles.paddingN} max-w-7xl mx-auto flex justify-between items-center`}>
         <Link
-          to="/"
+          to="/portfolio/"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("") //track where user are on the page
