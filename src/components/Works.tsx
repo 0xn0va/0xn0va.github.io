@@ -66,7 +66,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        {/* As tags agora estão dentro do mesmo bloco flex e ficam abaixo da descrição */}
         <div className="mt-4 flex flex-wrap gap-2 justify-start">
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>

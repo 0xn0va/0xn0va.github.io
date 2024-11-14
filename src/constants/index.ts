@@ -112,7 +112,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     company_name: "Assec sim",
     icon: assec,
     iconBg: "#383E56",
@@ -120,9 +120,9 @@ const experiences = [
     points: [
       "Developing and maintaining web and mobile applications using React Native and Bootstrap.",
       "Collaborating with cross-functional teams including designers, product managers and other developers.",
-      "Implementing responsive design, ensuring cross-browser compatibility, unit testing, ERP (Enterprise Resource Planning) and CRM (Customer Relanshionship Managment).",
+      "Implementing responsive design, ensuring cross-browser compatibility, unit testing, ERP (Enterprise Resource Planning) and CRM (Customer Relationship Managment).",
       "Participating in code reviews and providing constructive feedback to other developers.",
-      "Web Design.",
+      "UI/UX Design.",
     ],
   },
   {
@@ -144,13 +144,6 @@ const experiences = [
       "Compare and analyze both models in terms of precision and accuracy using metrics such as percentage error (PE), percentage of correct keypoints (PCK), mean per-joint position error (MPJPE), as well as processing time and speed.",
       "Carry out research and a comparative analysis of the company's competing products, classifying them according to their specific characteristics.",
     ],
-  },
-  {
-    title: "MSc in Sports Science",
-    company_name: "University of Beira Interior",
-    icon: ubi,
-    iconBg: "#383E56",
-    date: "Mar 2023 ",
   },
   {
     title: "Self-taught: My journey into programming",
