@@ -83,7 +83,7 @@ const Works: React.FC = () => {
   return (
     <>
       <motion.div variants={textVariant(0)}>
-        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Personal Projects</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -102,4 +102,4 @@ const Works: React.FC = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "projects")

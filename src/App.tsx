@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
+import { Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
 import Footer from "./components/Footer"
 
 export default function App() {
@@ -12,7 +12,6 @@ export default function App() {
             <Navbar />
             <Hero />
           </div>
-          <About />
           <Experience />
           <Tech />
           <Works />
