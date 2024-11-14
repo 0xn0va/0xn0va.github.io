@@ -27,12 +27,12 @@ import {
 
 export const navLinks = [
   {
-    id: "projects",
-    title: "Projects",
-  },
-  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -113,7 +113,7 @@ const technologies = [
 const experiences = [
   {
     title: "Frontend Developer",
-    company_name: "Assec sim",
+    company_name: "Assec Sim",
     icon: assec,
     iconBg: "#383E56",
     date: "Jul 2024 - at present",
