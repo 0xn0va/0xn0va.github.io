@@ -187,7 +187,7 @@ const projects = [
   {
     name: "Valentine Proposal",
     description:
-      "This was one of my first projects! I shared it with my friends, and they sent it to their valentines. Depending on the answer, something will happen to one of the buttons.",
+      "This was one of my first projects! I shared it with my friends, and they sent it to their valentines. Depending on the answer, something will happen to the buttons.",
     tags: [
       {
         name: "ReactJS",
@@ -204,7 +204,7 @@ const projects = [
     ],
     media: valentine,
     source_code_link: "https://github.com/BRp99/valentine-proposal",
-    live_demo_link: "https://valentine-proposal-brp99.vercel.app/",
+    live_demo_link: "https://valentine-proposal-brp99s-projects.vercel.app/",
   },
   {
     name: "Hangman Game",
