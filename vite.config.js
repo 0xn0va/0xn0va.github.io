@@ -1,16 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',
+  base: "/portfolio/",
 
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: '[name]-[hash].mjs',
-        chunkFileNames: '[name]-[hash].mjs',
-        assetFileNames: '[name]-[hash][extname]',
+        entryFileNames: "[name]-[hash].mjs",
+        chunkFileNames: "[name]-[hash].mjs",
+        assetFileNames: "[name]-[hash][extname]",
       },
     },
   },
