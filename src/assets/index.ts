@@ -27,6 +27,8 @@ import humanBodyPose from "./bask1.gif"
 import thisPortfolio from "./thisPortfolio.png"
 import valentine from "./valentine.png"
 import hangman from "./hangman.png"
+import vue from "./vuejs.png"
+import rotki from "./rotki.png"
 
 export {
   figma,
@@ -58,4 +60,6 @@ export {
   thisPortfolio,
   valentine,
   hangman,
+  vue,
+  rotki,
 }
