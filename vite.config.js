@@ -4,10 +4,13 @@ import react from "@vitejs/plugin-react"
 export default defineConfig({
   plugins: [react()],
   base: "/portfolio/",
+  build: {
+    outDir: "dist",
+  },
   rollupOptions: {
     output: {
-      entryFileNames: "[name]-[hash].mjs",
-      chunkFileNames: "[name]-[hash].mjs",
+      entryFileNames: "[name]-[hash].js",
+      chunkFileNames: "[name]-[hash].js",
       assetFileNames: "[name]-[hash][extname]",
     },
   },

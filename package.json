@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "postbuild": "find dist -name '*.js' | grep -q . && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.mjs\"' {} \\; || echo 'No .js files to rename'",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --repo https://github.com/BRp99/portfolio.git"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
