@@ -24,7 +24,6 @@ import {
   valentine,
   hangman,
   vue,
-  rotki,
 } from "../assets"
 
 export const navLinks = [
@@ -117,18 +116,6 @@ const technologies = [
 ]
 
 const experiences = [
-  {
-    title: "Open Source Contributor",
-    company_name: "Rotki",
-    icon: rotki,
-    iconBg: "#383E56",
-    date: "Jan 2025 - at present",
-    points: [
-      "Contributing to the frontend development of Rotki.",
-      "Engaging with the open-source community by participating in discussions.",
-      "Gaining experience in open-source best practices, including version control (Git), issue tracking, and pull requests.",
-    ],
-  },
   {
     title: "Frontend Developer",
     company_name: "Assec Sim",
