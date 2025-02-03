@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "find dist -name '*.js' | grep -q . && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.mjs\"' {} \\; || echo 'No .js files to rename'",
-    "deploy": "gh-pages -d dist -r https://github.com/BRp99/portfolio.git"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
