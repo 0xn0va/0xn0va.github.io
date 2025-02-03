@@ -6,12 +6,12 @@ export default defineConfig({
   base: "/portfolio/",
 
   build: {
-    // rollupOptions: {
-    //   output: {
-    //     entryFileNames: "[name]-[hash].mjs",
-    //     chunkFileNames: "[name]-[hash].mjs",
-    //     assetFileNames: "[name]-[hash][extname]",
-    //   },
-    // },
+    rollupOptions: {
+      output: {
+        entryFileNames: "[name]-[hash].mjs",
+        chunkFileNames: "[name]-[hash].mjs",
+        assetFileNames: "[name]-[hash][extname]",
+      },
+    },
   },
 })
