@@ -61,5 +61,4 @@ export {
   valentine,
   hangman,
   vue,
-  rotki,
 }
