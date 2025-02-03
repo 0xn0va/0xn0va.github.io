@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "postbuild": "find dist -name '*.js' | grep -q . && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.mjs\"' {} \\; || echo 'No .js files to rename'",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
