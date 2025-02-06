@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://github.com/BRp99/portfolio",
+  "homepage": "https://BRp99.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "find dist -name '*.js' | grep -q . && find dist -name '*.js' -exec sh -c 'mv \"$0\" \"${0%.js}.mjs\"' {} \\; || echo 'No .js files to rename'",
     "deploy": "gh-pages -d dist -r https://github.com/BRp99/portfolio.git"
   },
   "dependencies": {
