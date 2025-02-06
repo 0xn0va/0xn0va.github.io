@@ -21,7 +21,7 @@ import react from "@vitejs/plugin-react"
 
 export default defineConfig({
   plugins: [react()],
-  base: "/BRp99.github.io/",
+  base: "/",
   build: {
     rollupOptions: {
       output: {
