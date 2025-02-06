@@ -108,18 +108,19 @@ install Vite and gh-pages:
 In my GitHub repository, I have to go to **Settings** > **Pages** and select the `gh-pages` branch and the `root` folder to publish.
 
 **MIME Type issue resolution:**
-To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was configured to generate `.mjs` files instead of `.js` during the build process. I write code in the `vite.config.js` file:
-`javascript
+To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was configured to generate `.mjs` files instead of `.js` during the build process. I write this code in the `vite.config.js` file:
+`plugins: [react()],
+  base: "/",
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: '[name]-[hash].mjs',
-        chunkFileNames: '[name]-[hash].mjs',
-        assetFileNames: '[name]-[hash][extname]',
+        manualChunks: () => {},
       },
     },
-  }
+  },
   `
+
+I change the name of my repository from 'portfolio' to 'BRp99.github.io', because I wanna GitHub pages URL pointing to GitHub username instead the repository name.
 
 ## Project in Development:
 
@@ -130,9 +131,21 @@ To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was c
 3. `git push`.
 4. DON'T DELETE 'dist' folder.
 
-## Update the LIVE project when ready:
+## Update project when ready:
 
-1. When the project is LIVE and I wanna send the updates to the LIVE project: `git add .` then `git commit -m "info"` then `git push`;
+### On BRANCH main
+
+1. When the project is LIVE and I wanna send the updates I wrote: `git add .` then `git commit -m "info"` then `git push`;
 2. DELETE 'dist' folder;
-3. Create build folder 'dist' with `npm run build`;
-4. If `npm run build` was successful, I have to wrote in the terminal `npm run deploy` to deploy to gh-pages.
+3. Run `npm run build` to create `dist` folder;
+
+### On BRANCH gh-pages
+
+4. `git merge main`;
+5. `git add -A`;
+6. `git commit`;
+7. `git push origin gh-pages`;
+
+### On BRANCH main
+
+8. `npm run deploy` - Published

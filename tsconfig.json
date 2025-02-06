@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "incremental": true,
-
     "target": "esnext",
     "jsx": "react-jsx",
     "module": "esnext",
@@ -9,10 +8,8 @@
     "typeRoots": ["./node_modules/@types"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-
     "strict": true,
     "skipLibCheck": true,
-
     "sourceMap": true,
     "outDir": "./dist",
     "removeComments": true
