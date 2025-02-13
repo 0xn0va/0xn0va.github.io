@@ -194,12 +194,12 @@ const projects = [
     live_demo_link: "https://github.com/BRp99/body-pose-detection",
   },
   {
-    name: "Hangman Game",
+    name: "Blog Application",
     description:
-      "This was one of my first projects! I created it to practice handling events, work with DOM manipulation, and learn to break down problems into smaller parts. ",
+      "This application is built using the Next.js framework for server-side rendering and static site generation. TypeScript for type safety, and Tailwind CSS for styling. The JSONPlaceholder API is used to fetch blog post data.",
     tags: [
       {
-        name: "ReactJS",
+        name: "NextJS",
         color: "blue-text-gradient",
       },
       {
@@ -207,13 +207,13 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "CSS3",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    media: hangman,
-    source_code_link: "https://github.com/BRp99/hangman2",
-    live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
+    media: blog,
+    source_code_link: "https://github.com/BRp99/blog-app",
+    live_demo_link: "https://blog-app-brp99s-projects.vercel.app/",
   },
   {
     name: "This Portfolio",
@@ -238,12 +238,12 @@ const projects = [
     live_demo_link: "https://brp99.github.io/portfolio/",
   },
   {
-    name: "Blog Application",
+    name: "Hangman Game",
     description:
-      "This application is built using the Next.js framework for server-side rendering and static site generation. TypeScript for type safety, and Tailwind CSS for styling. The JSONPlaceholder API is used to fetch blog post data.",
+      "This was one of my first projects! I created it to practice handling events, work with DOM manipulation, and learn to break down problems into smaller parts. ",
     tags: [
       {
-        name: "NextJS",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
@@ -251,13 +251,13 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Tailwind",
+        name: "CSS3",
         color: "pink-text-gradient",
       },
     ],
-    media: blog,
-    source_code_link: "https://github.com/BRp99/blog-app",
-    live_demo_link: "https://blog-app-brp99s-projects.vercel.app/",
+    media: hangman,
+    source_code_link: "https://github.com/BRp99/hangman2",
+    live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
   },
 ]
 
