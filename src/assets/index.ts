@@ -29,6 +29,7 @@ import hangman from "./hangman.png"
 import vue from "./tech/vuejs.png"
 import next from "./tech/nextjs.png"
 import blog from "./blog.png"
+import newZealand from "./newZealand.png"
 
 export {
   figma,
@@ -62,4 +63,5 @@ export {
   vue,
   next,
   blog,
+  newZealand,
 }

@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist -r https://github.com/BRp99/BRp99.github.io"
+    "deploy": "gh-pages -d dist -r https://github.com/0xn0va/0xn0va.github.io"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

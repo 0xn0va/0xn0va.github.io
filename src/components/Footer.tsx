@@ -1,4 +1,4 @@
-import { SectionWrapper } from './hoc'
+import { SectionWrapper } from "./hoc"
 
 const githubIcon = (
   <svg width="24" height="24" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@ const Footer = () => {
 
       <div className="flex gap-6">
         <a
-          href="https://github.com/BRp99"
+          href="https://github.com/0xn0va"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-70 hover:opacity-100 transition-opacity duration-300"
@@ -53,4 +53,4 @@ const Footer = () => {
   )
 }
 
-export default SectionWrapper(Footer, '')
+export default SectionWrapper(Footer, "")

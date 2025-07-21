@@ -25,6 +25,7 @@ import {
   vue,
   next,
   blog,
+  newZealand,
 } from "../assets"
 
 export const navLinks = [
@@ -122,6 +123,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Open Source Contributions during Travel",
+    company_name: "New Zealand",
+    icon: newZealand,
+    iconBg: "#383E56",
+    date: " Mar 2025 - May 2025",
+    points: [
+      "Traveled across New Zealand while maintaining a self-directed learning schedule focused on web technologies.",
+      "Contributed to open source projects on GitHub.",
+      "Strengthened adaptability, autonomy, and technical skills through immersive learning in a new cultural and geographic environment.",
+      "Balanced personal exploration and professional growth.",
+    ],
+  },
+  {
     title: "Frontend Developer",
     company_name: "Assec Sim",
     icon: assec,
@@ -190,13 +204,12 @@ const projects = [
       },
     ],
     media: humanBodyPose,
-    source_code_link: "https://github.com/BRp99/body-pose-detection",
-    live_demo_link: "https://github.com/BRp99/body-pose-detection",
+    source_code_link: "https://github.com/0xn0va/body-pose-detection",
+    live_demo_link: "https://github.com/0xn0va/body-pose-detection",
   },
   {
     name: "Blog Application",
-    description:
-      "This application is built using the Next.js framework for server-side rendering and static site generation. TypeScript for type safety, and Tailwind CSS for styling. The JSONPlaceholder API is used to fetch blog post data.",
+    description: " Build a blog application compatible with IPFS, with Next.js framework for server-side rendering and static site generation.",
     tags: [
       {
         name: "NextJS",
@@ -212,8 +225,8 @@ const projects = [
       },
     ],
     media: blog,
-    source_code_link: "https://github.com/BRp99/blog-app",
-    live_demo_link: "https://blog-app-brp99s-projects.vercel.app/",
+    source_code_link: "https://github.com/0xn0va/blog-app",
+    live_demo_link: "https://blog-app-0xn0va-projects.vercel.app/",
   },
   {
     name: "This Portfolio",
@@ -234,8 +247,8 @@ const projects = [
       },
     ],
     media: thisPortfolio,
-    source_code_link: "https://github.com/BRp99/portfolio",
-    live_demo_link: "https://brp99.github.io/portfolio/",
+    source_code_link: "https://github.com/0xn0va/portfolio",
+    live_demo_link: "https://0xn0va.github.io/portfolio/",
   },
   {
     name: "Hangman Game",
@@ -256,8 +269,8 @@ const projects = [
       },
     ],
     media: hangman,
-    source_code_link: "https://github.com/BRp99/hangman2",
-    live_demo_link: "https://hangman2-brp99s-projects.vercel.app/",
+    source_code_link: "https://github.com/0xn0va/hangman2",
+    live_demo_link: "https://hangman2-0xn0va-projects.vercel.app/",
   },
 ]
 

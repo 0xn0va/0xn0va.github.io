@@ -120,7 +120,7 @@ To ensure GitHub Pages correctly I have to treat JS files as modules, Vite was c
   },
   `
 
-I change the name of my repository from 'portfolio' to 'BRp99.github.io', because I wanna GitHub pages URL pointing to GitHub username instead the repository name.
+I change the name of my repository from 'portfolio' to '0xn0va.github.io', because I wanna GitHub pages URL pointing to GitHub username instead the repository name.
 
 ## Project in Development:
 
