@@ -226,7 +226,7 @@ const projects = [
     ],
     media: blog,
     source_code_link: "https://github.com/0xn0va/blog-app",
-    live_demo_link: "https://blog-app-0xn0va-projects.vercel.app/",
+    live_demo_link: "https://blog-app-brp99s-projects.vercel.app/",
   },
   {
     name: "This Portfolio",
@@ -270,7 +270,7 @@ const projects = [
     ],
     media: hangman,
     source_code_link: "https://github.com/0xn0va/hangman2",
-    live_demo_link: "https://hangman2-0xn0va-projects.vercel.app/",
+    live_demo_link: "https://hangman2-six.vercel.app/",
   },
 ]
 
