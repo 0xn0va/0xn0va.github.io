@@ -30,6 +30,7 @@ import vue from "./tech/vuejs.png"
 import next from "./tech/nextjs.png"
 import blog from "./blog.png"
 import newZealand from "./newZealand.png"
+import ptFlag from "../assets/ptFla.png"
 
 export {
   figma,
@@ -64,4 +65,5 @@ export {
   next,
   blog,
   newZealand,
+  ptFlag,
 }
