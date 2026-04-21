@@ -31,6 +31,7 @@ import next from "./tech/nextjs.png"
 import blog from "./blog.png"
 import newZealand from "./newZealand.png"
 import ptFlag from "../assets/ptFla.png"
+import plantpixelIcon from "../assets/plantpixel.png"
 
 export {
   figma,
@@ -66,4 +67,5 @@ export {
   blog,
   newZealand,
   ptFlag,
+  plantpixelIcon,
 }

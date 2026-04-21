@@ -4,7 +4,7 @@
 
 1. Run `npm run dev` to run local;
 2. `git add .`;
-3. `git commit - "info"`;
+3. `git commit -m "info"`;
 4. `git push`;
 5. Delete folder 'dist';
 6. `npm run build`;

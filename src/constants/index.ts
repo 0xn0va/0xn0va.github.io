@@ -27,6 +27,7 @@ import {
   blog,
   newZealand,
   ptFlag,
+  plantpixelIcon,
 } from "../assets"
 
 export const navLinks = [
@@ -124,6 +125,21 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Co-Founder, Business Development & Social Media",
+    company_name: "Plantpixel",
+    icon: plantpixelIcon,
+    iconBg: "#E6DEDD",
+    date: "2025 - Present",
+    points: [
+      "Co-founded Plantpixel (plantpixel.io), an international plant aggregator that centralizes nursery catalogs from multiple countries into a single, searchable platform.",
+      "Driving business development strategy by identifying and onboarding international nursery partners, establishing the commercial pipeline and vendor acquisition framework.",
+      "Leading market research and competitive positioning to validate product-market fit across the global horticultural industry.",
+      "Overseeing operational workflows and cross-functional coordination to ensure scalable growth from MVP to a fully integrated marketplace.",
+      "Managing Plantpixel's social media presence across Instagram, LinkedIn, X, and Facebook - developing a cohesive brand identity through visual storytelling and positioning the platform as a trusted voice in the international horticultural space.",
+      "Creating original content and monitoring performance metrics to drive organic audience growth, community engagement, and brand visibility across all channels.",
+    ],
+  },
+  {
     title: "Full Stack Developer & Founder (Startup Voucher)",
     company_name: "Linca | IAPMEI",
     icon: ptFlag,
@@ -138,7 +154,7 @@ const experiences = [
   },
   {
     title: "Social Media Management and Digital Design",
-    company_name: "Linca",
+    company_name: "Some companies - NDA",
     icon: figma,
     iconBg: "#E6DEDD",
     date: "July 2025 - Aug 2025",
