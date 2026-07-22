@@ -28,6 +28,7 @@ import {
   newZealand,
   ptFlag,
   plantpixelIcon,
+  hdo,
 } from "../assets"
 
 export const navLinks = [
@@ -125,7 +126,23 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Co-Founder, Business Development & Social Media",
+    title: "Software Developer",
+    company_name: "HDO Global Trade",
+    icon: hdo,
+    iconBg: "#696969",
+    date: "Jul 2026 - Present",
+    points: [
+      "Developing and maintaining web applications using JavaScript.",
+      "Designing and implementing new features, improving functionality, user experience, and platform performance.",
+      "Optimizing application performance, fixing bugs, and ensuring cross-browser compatibility.",
+      "Implementing technical SEO best practices, including metadata optimization, structured content, and performance improvements to enhance search engine visibility.",
+      "Integrating and monitoring Google Analytics to track user behavior, measure key performance indicators, and support data-driven decisions.",
+      "Developing and maintaining technical dashboards to visualize application metrics, analytics, and business performance data.",
+      "Participating in code reviews, version control workflows with Git, and continuous improvement of the development process.",
+    ],
+  },
+  {
+    title: "Co-Founder and Business Development",
     company_name: "Plantpixel",
     icon: plantpixelIcon,
     iconBg: "#E6DEDD",

@@ -32,6 +32,7 @@ import blog from "./blog.png"
 import newZealand from "./newZealand.png"
 import ptFlag from "../assets/ptFla.png"
 import plantpixelIcon from "../assets/plantpixel.png"
+import hdo from "../assets/hdo.png"
 
 export {
   figma,
@@ -68,4 +69,5 @@ export {
   newZealand,
   ptFlag,
   plantpixelIcon,
+  hdo,
 }
